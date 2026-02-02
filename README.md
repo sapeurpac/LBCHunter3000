@@ -23,6 +23,8 @@ Il combine un **Scraper intelligent** (Playwright) capable d'extraire les spéci
     * Graphiques de distribution des prix.
     * Filtres dynamiques (Budget, GPU, RAM).
     * Tableau interactif avec liens directs.
+    <img width="1885" height="832" alt="image" src="https://github.com/user-attachments/assets/0e5ab51d-ad8b-4902-aee0-c0fff9929651" />
+
 * **Architecture Robuste** : Le scraper tourne dans un processus isolé (`subprocess`) pour éviter les crashs de l'interface graphique.
 
 ## 🛠️ Installation
