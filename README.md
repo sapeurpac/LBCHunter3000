@@ -60,3 +60,9 @@ Si vous n'avez pas le fichier, créez-le avec ceci :
 streamlit
 pandas
 playwright
+```
+
+## 🛠️ Execution du script :
+  ```bash
+    streamlit run dashboard.py
+    ```
