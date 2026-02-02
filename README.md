@@ -65,4 +65,3 @@ playwright
 ## 🛠️ Execution du script :
   ```bash
     streamlit run dashboard.py
-    ```
