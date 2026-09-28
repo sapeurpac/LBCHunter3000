@@ -85,7 +85,12 @@ def run_scraper(search_query):
                         prix = int("".join(re.findall(r'\d+', p_text)))
                     except: prix = 0
 
-                    try: ville = page.locator("div[class*='location']").first.inner_text(timeout=500).replace("\n", " ")
+                    # Ville : lue dans le JSON __NEXT_DATA__ (l'ancien div[class*='location'] ne matche plus)
+                    try:
+                        ville = page.evaluate("""() => { try {
+                            return JSON.parse(document.getElementById('__NEXT_DATA__').textContent)
+                                .props.pageProps.ad.location.city_label
+                        } catch (e) { return null } }""") or "Inconnue"
                     except: ville = "Inconnue"
 
                     try: description = page.locator("div[data-qa-id='adview_description_container'] p").inner_text(timeout=500)

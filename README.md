@@ -31,8 +31,8 @@ Il combine un **Scraper intelligent** (Playwright) capable d'extraire les spéci
 
 1.  **Cloner le projet**
     ```bash
-    git clone [https://github.com/votre-pseudo/lbc-hunter-3000.git](https://github.com/votre-pseudo/lbc-hunter-3000.git)
-    cd lbc-hunter-3000
+    git clone https://github.com/sapeurpac/LBCHunter3000.git
+    cd LBCHunter3000
     ```
 
 2.  **Créer un environnement virtuel (recommandé)**
@@ -62,6 +62,10 @@ pandas
 playwright
 ```
 
-## 🛠️ Execution du script :
-  ```bash
-    streamlit run dashboard.py
+## ▶️ Exécution
+```bash
+streamlit run dashboard.py
+```
+
+### ⚡ Installation + test en un clic (Windows)
+Double-cliquer sur `setup_et_test.bat` : crée le venv, installe les dépendances et Chromium, lance `test_lbc.py` (diagnostic des sélecteurs LeBonCoin → `test_resultat.txt`) puis démarre le dashboard.
